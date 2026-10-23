@@ -14,9 +14,9 @@ El objetivo principal de este repositorio es construir y desplegar la estructura
 
 A continuación, se listan los profesionales responsables del diseño, desarrollo y control de versiones de este proyecto:
 
-* **[Nombre Completo 1]** - *Desarrollador Frontend & Especialista Git*
-* **[Nombre Completo 2]** - *Diseñador de Estructura e Interfaz*
-* **[Nombre Completo 3]** - *Analista de Datos y Contenido Corporativo*
+* **[Garcia Magro Jesus A.]** - *Desarrollador Frontend & Especialista Git*
+* **[Sanchez Zambrano Rhiguel A.]** - *Diseñador de Estructura e Interfaz*
+* **[Damian Jorge Mijael S.]** - *Analista de Datos y Contenido Corporativo*
 
 ---
 
