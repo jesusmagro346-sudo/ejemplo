@@ -1,0 +1,162 @@
+/* Estilos globales para toda la pantalla */
+body {
+    background-color: #f8f7f4; /* Marfil */
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Encabezado unificado */
+header {
+    text-align: center;
+    padding: 40px 20px 10px 20px;
+}
+
+header h1 {
+    color: #354f48; /* Verde Oscuro */
+    font-size: 2.5rem;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+}
+
+/* Línea decorativa sutil debajo del título */
+header h1::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #E8f0ec; /* Verde Pastel */
+    margin: 10px auto 0 auto;
+    border-radius: 2px;
+}
+
+/* Subtítulo del encabezado */
+.subtitulo {
+    color: #354f48; /* Verde Oscuro con menor opacidad visual */
+    opacity: 0.8;
+    font-size: 1.1rem;
+    margin-top: 12px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.4;
+}
+
+/* Contenedor principal del equipo */
+.contenedor-equipo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Tarjetas individuales */
+.tarjeta-miembro {
+    background-color: #ffffff; /* Blanco */
+    border: 2px solid #E8f0ec; /* Verde Pastel */
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(53, 79, 72, 0.05); /* Sombra basada en tu verde oscuro */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el mouse por encima */
+.tarjeta-miembro:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(53, 79, 72, 0.15);
+    cursor: pointer;
+}
+
+/* Imagen de perfil circular */
+.tarjeta-miembro img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #354f48; /* Verde Oscuro */
+}
+
+/* Nombre del miembro */
+.tarjeta-miembro h2 {
+    margin: 10px 0 5px 0;
+    font-size: 1.4rem;
+    color: #333333; 
+}
+
+/* Cargo (Etiqueta estilizada) */
+.tarjeta-miembro .cargo {
+    display: inline-block;
+    font-weight: bold;
+    color: #354f48; /* Verde Oscuro */
+    background-color: #E8f0ec; /* Verde Pastel */
+    padding: 5px 12px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    font-size: 0.85rem;
+}
+
+/* Descripción del perfil */
+.tarjeta-miembro .descripcion {
+    font-size: 0.9rem;
+    color: #555555; 
+    line-height: 1.6;
+}
+
+/* Botón interactivo dentro de la tarjeta */
+.btn-perfil {
+    background-color: #354f48; /* Verde Oscuro */
+    color: #ffffff; /* Blanco */
+    border: none;
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Cambio de color al pasar el mouse por el botón */
+.btn-perfil:hover {
+    background-color: #E8f0ec; /* Verde Pastel */
+    color: #354f48; /* Verde Oscuro */
+}
+footer {
+    background-color: #354F48;
+    color: #F8F7F4;
+    padding: 45px 8% 25px;
+    text-align: center;
+}
+
+footer hr {
+    display: none;
+}
+
+footer h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+footer div {
+    margin-bottom: 30px;
+}
+
+footer div p {
+    margin: 8px 0;
+    font-size: 15px;
+    color: #E0E9E3;
+}
+
+footer > p {
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    padding-top: 20px;
+    color: #D4DED8;
+    font-size: 13px;
+}
