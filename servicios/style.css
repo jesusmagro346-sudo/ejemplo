@@ -1,0 +1,205 @@
+/* ==========================================
+   VARIABLES DE COLOR (Paleta Unificada)
+   ========================================== */
+:root {
+    --bg-body: #F8F7F4;        /* Crema / Blanco hueso */
+    --bg-card-active: #E8F0EC; /* Verde agua suave (para cartas activas) */
+    --bg-white: #FFFFFF;       /* Blanco puro */
+    
+    --color-primary: #779B91;  /* Verde salvia / Menta suave */
+    --heading-color: #354F48;  /* Verde bosque oscuro */
+    
+    --text-main: #343A40;      /* Gris oscuro antracita */
+    --text-muted: #626C68;     /* Gris verdoso medio */
+    --text-link: #555B63;      /* Gris pizarra */
+    
+    --border-color: #E8E5E0;   /* Gris claro cálido */
+}
+
+/* Configuración general (Corregido de '-' a '*') */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-body);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+/* Encabezado y navegación */
+header {
+    background-color: var(--bg-white);
+    padding: 18px 8%;
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Menú */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 35px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-link);
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.btn-nav {
+    color: var(--color-primary);
+}
+
+/* ==========================================
+   SECCIÓN DE SERVICIOS
+   ========================================== */
+.services-section {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    color: var(--heading-color);
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+/* Grid de Cartas */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    align-items: start;
+}
+
+/* Checkbox oculto para activar las cartas */
+.card-toggle {
+    display: none;
+}
+
+/* Estructura de la Carta */
+.card {
+    display: block;
+    background-color: var(--bg-white);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 28px 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-primary);
+    box-shadow: 0 8px 20px rgba(119, 155, 145, 0.15);
+}
+
+.card-icon {
+    font-size: 38px;
+    display: block;
+    margin-bottom: 14px;
+}
+
+.card h3 {
+    font-size: 20px;
+    color: var(--heading-color);
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.card-preview {
+    color: var(--text-muted);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Detalles desplegables sin JS */
+.card-details {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.3s ease, margin-top 0.3s ease;
+    border-top: 1px solid var(--border-color);
+    margin-top: 0;
+}
+
+.card-details h4 {
+    font-size: 15px;
+    color: var(--color-primary);
+    margin-bottom: 6px;
+}
+
+.card-details p {
+    font-size: 14px;
+    color: var(--text-link);
+    line-height: 1.6;
+}
+
+/* Estado activo al seleccionar la carta */
+.card-toggle:checked + .card {
+    background-color: var(--bg-card-active);
+    border-color: var(--color-primary);
+}
+
+.card-toggle:checked + .card .card-details {
+    max-height: 250px;
+    opacity: 1;
+    margin-top: 18px;
+    padding-top: 16px;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 600px) {
+    header {
+        padding: 18px 15px;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .services-section {
+        margin: 40px auto;
+    }
+
+    .section-title {
+        font-size: 26px;
+    }
+
+    .section-subtitle {
+        font-size: 14px;
+    }
+}
