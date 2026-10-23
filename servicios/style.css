@@ -238,3 +238,85 @@ footer > p {
     font-size: 13px;
 }
 
+/* --- Estilos para la Barra de Navegación --- */
+.navbar {
+  width: 100%;
+  padding: 20px 40px;
+  background-color: #ffffff; /* Fondo limpio para la barra */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Sombra sutil inferior */
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- Estilos para la Barra de Navegación Minimalista --- */
+.navbar {
+  width: 100%;
+  padding: 24px 40px;
+  background-color: transparent; /* Sin fondo sólido */
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- Botón Volver Minimalista --- */
+.btn-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 0; /* Espaciado arriba/abajo, 0 a los lados para alinear al borde */
+  background-color: transparent; /* Sin fondo */
+  color: #111827; /* Gris casi negro muy elegante */
+  text-decoration: none;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: -0.01em; /* Tipografía más compacta y moderna */
+  position: relative; /* Necesario para la línea animada */
+  transition: color 0.25s ease;
+}
+
+/* --- Línea inferior minimalista (Efecto invisible al inicio) --- */
+.btn-nav::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px; /* Línea ultra fina */
+  background-color: #111827;
+  transform: scaleX(0); /* Oculta la línea reduciendo su escala a 0 */
+  transform-origin: right;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* --- Efecto Hover (Al pasar el mouse) --- */
+.btn-nav:hover {
+  color: #4b5563; /* Suaviza el color del texto */
+}
+
+/* Activa la línea de izquierda a derecha en Hover */
+.btn-nav:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* --- Animación sutil de la Flecha --- */
+.btn-icon {
+  font-size: 1rem;
+  transition: transform 0.25s ease;
+}
+
+.btn-nav:hover .btn-icon {
+  transform: translateX(-4px); /* Movimiento limpio hacia atrás */
+}
