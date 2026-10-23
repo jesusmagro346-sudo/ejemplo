@@ -203,3 +203,38 @@ nav a.btn-nav {
         font-size: 14px;
     }
 }
+footer {
+    background-color: #354F48;
+    color: #F8F7F4;
+    padding: 45px 8% 25px;
+    text-align: center;
+}
+
+footer hr {
+    display: none;
+}
+
+footer h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+footer div {
+    margin-bottom: 30px;
+}
+
+footer div p {
+    margin: 8px 0;
+    font-size: 15px;
+    color: #E0E9E3;
+}
+
+footer > p {
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    padding-top: 20px;
+    color: #D4DED8;
+    font-size: 13px;
+}
+
