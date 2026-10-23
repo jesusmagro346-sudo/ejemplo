@@ -1,0 +1,404 @@
+
+/* =====================================
+   1. CONFIGURACIÓN GENERAL
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F8F7F4;
+    color: #343A40;
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h2 {
+    color: #354F48;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+section {
+    padding: 75px 8%;
+}
+
+
+/* =====================================
+   2. MENÚ DE NAVEGACIÓN
+===================================== */
+
+header {
+    background-color: #FFFFFF;
+    padding: 18px 8%;
+    border-bottom: 1px solid #E8E5E0;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 32px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555B63;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #779B91;
+}
+
+
+/* =====================================
+   3. SECCIÓN PRINCIPAL / HERO
+===================================== */
+
+main#inicio {
+    max-width: 1100px;
+    margin: 65px auto;
+    padding: 90px 50px;
+    width: 84%;
+
+    text-align: center;
+    background-color: #E8F0EC;
+    border-radius: 14px;
+}
+
+main h1 {
+    color: #354F48;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 22px;
+}
+
+main p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #626C68;
+    font-size: 17px;
+}
+
+
+/* =====================================
+   4. SECCIÓN DE SERVICIOS
+===================================== */
+
+#servicios {
+    background-color: #FFFFFF;
+}
+
+.servicios-contenedor {
+    max-width: 1000px;
+    margin: 40px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.servicios-contenedor article {
+    background-color: #F8F7F4;
+    border: 1px solid #E8E5E0;
+    border-radius: 12px;
+    padding: 30px;
+
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.servicios-contenedor article:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 22px rgba(53, 79, 72, 0.08);
+}
+
+.servicios-contenedor img {
+    width: 100%;
+    height: 170px;
+    object-fit: contain;
+    margin-bottom: 22px;
+}
+
+.servicios-contenedor h3 {
+    color: #354F48;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.servicios-contenedor p {
+    color: #626C68;
+    font-size: 15px;
+}
+
+
+/* =====================================
+   5. SECCIÓN DE MÉTRICAS
+===================================== */
+
+#metricas {
+    background-color: #F0F4F1;
+    text-align: center;
+}
+
+#metricas > p {
+    color: #626C68;
+    margin: 0 auto 30px;
+    max-width: 650px;
+}
+
+#metricas svg {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+}
+
+/* Barras del gráfico */
+#metricas svg rect {
+    rx: 5;
+    transition: opacity 0.25s ease;
+}
+
+#metricas svg rect:hover {
+    opacity: 0.75;
+}
+
+/* Textos y etiquetas del gráfico */
+#metricas svg text {
+    font-family: Arial, Helvetica, sans-serif;
+    fill: #354F48;
+}
+
+/* Línea base */
+#metricas svg line {
+    stroke: #AAB8B0;
+    stroke-width: 1.5;
+}
+
+
+/* =====================================
+   6. SECCIÓN DE PRECIOS
+===================================== */
+
+#precios {
+    background-color: #FFFFFF;
+}
+
+#precios table {
+    width: 100%;
+    max-width: 800px;
+    margin: 35px auto 0;
+
+    border: 1px solid #E1E7E2;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+
+    background-color: #FFFFFF;
+    font-size: 15px;
+}
+
+#precios th {
+    background-color: #E8F0EC;
+    color: #354F48;
+    font-weight: 600;
+    padding: 18px 14px;
+    border: 1px solid #DCE5DF;
+}
+
+#precios td {
+    padding: 18px 14px;
+    border: 1px solid #E8E5E0;
+    color: #555B63;
+}
+
+#precios tbody tr:nth-child(even) {
+    background-color: #F8F7F4;
+}
+
+#precios tbody tr:hover {
+    background-color: #F0F4F1;
+}
+
+#precios td strong {
+    color: #354F48;
+}
+
+
+/* =====================================
+   7. PIE DE PÁGINA / CONTACTO
+===================================== */
+
+footer {
+    background-color: #354F48;
+    color: #F8F7F4;
+    padding: 45px 8% 25px;
+    text-align: center;
+}
+
+footer hr {
+    display: none;
+}
+
+footer h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+footer div {
+    margin-bottom: 30px;
+}
+
+footer div p {
+    margin: 8px 0;
+    font-size: 15px;
+    color: #E0E9E3;
+}
+
+footer > p {
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    padding-top: 20px;
+    color: #D4DED8;
+    font-size: 13px;
+}
+
+
+/* =====================================
+   8. DISEÑO RESPONSIVE PARA TABLETS
+===================================== */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 16px 4%;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    main#inicio {
+        width: 90%;
+        margin: 40px auto;
+        padding: 65px 30px;
+    }
+
+    main h1 {
+        font-size: 34px;
+    }
+
+    section {
+        padding: 55px 5%;
+    }
+
+    .servicios-contenedor {
+        gap: 20px;
+    }
+
+    .servicios-contenedor article {
+        padding: 22px;
+    }
+
+    #precios table {
+        font-size: 13px;
+    }
+
+    #precios th,
+    #precios td {
+        padding: 12px 8px;
+    }
+}
+
+
+/* =====================================
+   9. DISEÑO RESPONSIVE PARA CELULARES
+===================================== */
+
+@media (max-width: 520px) {
+
+    nav ul {
+        gap: 12px 18px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    main#inicio {
+        padding: 45px 22px;
+    }
+
+    main h1 {
+        font-size: 29px;
+    }
+
+    main p {
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .servicios-contenedor {
+        grid-template-columns: 1fr;
+    }
+
+    .servicios-contenedor img {
+        height: 145px;
+    }
+
+    #metricas svg {
+        width: 100%;
+    }
+
+    #precios {
+        overflow-x: auto;
+    }
+
+    #precios table {
+        min-width: 440px;
+    }
+
+    footer {
+        padding: 35px 6% 22px;
+    }
+
+    footer div p {
+        font-size: 13px;
+        overflow-wrap: anywhere;
+    }
+}

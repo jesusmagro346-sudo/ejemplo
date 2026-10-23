@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Mi Empresa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Menú de navegación -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#metricas">Métricas</a></li>
+                <li><a href="#precios">Precios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="/equipo.html">Contacto</a></li>
+                <li><a href="/servicios.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Principal / Hero -->
+    <main id="inicio">
+        <h1>Bienvenidos a Mi Empresa</h1>
+        <p>Somos una organización dedicada a ofrecer las mejores soluciones tecnológicas para hacer crecer tu negocio de manera eficiente y segura.</p>
+    </main>
+
+    <!-- Sección de Servicios con Imágenes -->
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="servicios-contenedor">
+            <article>
+                <img src="https://placeholder.com" alt="Icono de desarrollo web de software empresarial">
+                <h3>Desarrollo Web</h3>
+                <p>Creamos plataformas digitales rápidas, modernas y adaptadas a tus necesidades comerciales.</p>
+            </article>
+            <article>
+                <img src="https://placeholder.com" alt="Icono de seguridad digital y protección de datos">
+                <h3>Ciberseguridad</h3>
+                <p>Protegemos la información de tu empresa contra amenazas digitales con auditorías constantes.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Sección de Gráficos / Métricas de Impacto -->
+    <section id="metricas">
+        <h2>Rendimiento de Nuestros Clientes</h2>
+        <p>Promedio de crecimiento en ventas tras implementar nuestras soluciones:</p>
+        
+        <!-- Gráfico de barras simple usando SVG para que no dependa de archivos externos -->
+        <svg width="100%" viewBox="0 0 400 200" style="max-width: 500px; display: block; margin: auto;">
+            <!-- Barras del gráfico -->
+            <rect x="50" y="120" width="40" height="50" fill="#cccccc" />
+            <text x="50" y="190" font-size="12">Año 1</text>
+            <text x="55" y="110" font-size="12" font-weight="bold">+15%</text>
+
+            <rect x="150" y="80" width="40" height="90" fill="#a0c4ff" />
+            <text x="150" y="190" font-size="12">Año 2</text>
+            <text x="155" y="70" font-size="12" font-weight="bold">+45%</text>
+
+            <rect x="250" y="30" width="40" height="140" fill="#4ea8de" />
+            <text x="250" y="190" font-size="12">Año 3</text>
+            <text x="255" y="20" font-size="12" font-weight="bold">+120%</text>
+            
+            <!-- Línea base -->
+            <line x1="20" y1="170" x2="350" y2="170" stroke="#000" stroke-width="2" />
+        </svg>
+    </section>
+
+    <!-- Sección de Precios (Tabla) -->
+    <section id="precios">
+        <h2>Planes a tu Medida</h2>
+        <table border="1" style="width:100%; max-width:600px; margin:auto; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th>Plan</th>
+                    <th>Beneficios</th>
+                    <th>Precio Mensual</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Emprendedor</strong></td>
+                    <td>Soporte estándar, 1 sitio web, Seguridad básica</td>
+                    <td>$49 USD</td>
+                </tr>
+                <tr>
+                    <td><strong>Corporativo</strong></td>
+                    <td>Soporte 24/7, Sitios ilimitados, Auditorías de seguridad</td>
+                    <td>$149 USD</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Pie de Página (Footer) con Datos Ficticios -->
+    <footer id="contacto">
+        <hr>
+        <div>
+            <h3>Contacto Corporativo</h3>
+            <p>📍 <strong>Dirección:</strong> Av. Tecnología Digital 404, Tech City</p>
+            <p>📞 <strong>Teléfono:</strong> +1 (555) 019-2834</p>
+            <p>📧 <strong>Correo:</strong> contacto@miempresatech.com</p>
+        </div>
+        <br>
+        <p>&copy; 2026 Mi Empresa Tecnológica. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
